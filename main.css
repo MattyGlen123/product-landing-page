@@ -1,27 +1,353 @@
+body {
+  min-width: 380px;
+  margin: 0;
+  background-color: #BFD8D2;
+  font-family: 'Fjalla+One', 'Esteban', serif;
+}
+
+#header {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(https://res.cloudinary.com/drldpyegp/image/upload/v1529350139/pexels-photo-105032.jpg) no-repeat center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 2fr 1fr 4fr;
+  justify-items: center;
+}
+
+.header-img {
+  width: 250px;
+  align-self: center;
+}
+
 #nav-bar {
+  width: 100%;
+  max-width: 1200px;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#nav-bar .nav-link {
+  text-decoration: none;
+  color: #E6ECF2;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: #E6ECF2 solid 3px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  transition: color .3s, border .3s;
+}
+  
+#nav-bar .nav-link:hover {
+  color: #B7B5BA;
+  border: #B7B5BA solid 3px;
+}
+
+h1 {
+  font-family: 'Fjalla+One', 'Libre Baskerville', serif;
+  font-size: 2.4rem;
+  color: #B7B5BA;
+  align-self: end;
+  padding-bottom: 1em;
+}
+
+/****************************************** Main section **************************************/
+
+main {
+  padding: 4rem 0;
+  display: grid;
+  grid-gap: 10px;
+  margin: 20px;
+  grid-template-columns: minmax(auto, 450px);
+  justify-content: center;
+}
+
+.main-content-header {
+  text-align: center;
+}
+
+.main-content-header span {
+  display: block;
+  letter-spacing: 4px;
+  font-size: 1.1rem;
+  color: #DCB239;
+}
+
+.main-content-header h2 {
+  font-size: 50px;
+  line-height: 50px;
+  color: #DF744A;
+}
+
+.main-content-header .heading-seperation {
+  margin: 25px auto;
+  background: #DCB239;
+  height: 5px;
+  width: 110px;
+}
+
+.main-content-header p {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 25px;
+  max-width: 700px; 
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: #DF744A;
+}
+
+main section {
+  position: relative;
+  background-color: black;
+}
+
+section img,
+section iframe {
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+}
+
+section img {
+  opacity: 0.3;
+}
+  
+section img:hover {
+  opacity: 1;
+}
+
+section span {
+  position: absolute;
+  left: 20px;
+  bottom: 66px;
+  padding: 10px 15px 0;
+  border-top: 4px solid #DCB239;
+  color: white;
+}
+
+.sub-heading {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  color: white;
+}
+
+.video div {
+  position: relative;
+  overflow: hidden;
+  padding-top: 67.5%;
+  height: auto;
+}
+
+.video div iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/****************************************** Contact section **************************************/
+
+.skyline-background {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+  width: 100%;
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1529767068/skyline-1566218_1920.png) no-repeat center,
+    linear-gradient( rgba(69,70,75, 1), rgba(69,70,75, 1));
+  background-size: cover;
+}
+
+.main-content-header {
+  text-align: center;
+}
+
+#contact span {
+  display: block;
+  letter-spacing: 4px;
+  font-size: 1.1rem;
+  color: rgb(128,173,206);
+}
+
+#contact h2 {
+  font-size: 50px;
+  line-height: 50px;
+  color: rgb(37,90,146);
+}
+
+#contact .heading-seperation {
+  margin: 25px auto;
+  background-color: rgb(37,90,146);
+  height: 5px;
+  width: 110px;
+}
+
+#contact p {
+  display: block;
+  text-align: center;
+  margin: 0 auto 20px;
+  max-width: 340px;
+  color: rgb(128,173,206);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#form {
+  padding-top: 20px;
+}
+
+#form #email {
+  padding-left: 15px;
+  width: 70%;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+
+#form #submit {
+  height: 62px;
+  margin-left: -10px;
+  padding: 0 10px;
+  width: 90px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #58BA4A;
+  border: 4px solid white;
+}
+
+.icon-container i {
+  padding: 70px 30px;
+  color: white;
+  font-size: 3rem;
+}
+
+footer,
+.footer-links-container {
   display: flex;
 }
 
+footer {
+  color: white;
+  background: #494d59;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-links-container {
+  list-style-type: none; 
+  padding-left: 10px;
+}
+
+.footer-link {
+  display: block;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-link a {
+  color: #E6ECF2;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: #B7B5BA;
+}
+
+.copyRight-container {
+  margin-left: auto;
+  padding-right: 1em;
+  color: #E6ECF2;
+}
+
 @media (max-width: 599px) { /* Mobiles */
-  body {
-    background-color: blue;
-  }
+
 }
 
 @media (min-width: 600px) { /* Tablet Portrait */
-  body {
-    background-color: red;
+  #nav-bar .nav-link {
+    font-size: 1.1rem;
+    width: 120px;
+  }
+  
+  main {
+    grid-template-columns: minmax(auto, 450px) minmax(auto, 450px);
+    grid-template-areas: 
+      "header  header"
+      "america europe" 
+      "asia    van" 
+      "video-a video-b";
+  }
+  
+  .main-content-header {
+    grid-area: header
+  }
+  
+  .america {
+    grid-area: america;
+  }
+
+  .europe {
+    grid-area: europe;
+  }
+
+  .asia {
+    grid-area: asia;
+  }
+  
+  .video-a {
+    grid-area: video-a;
+  }
+  
+  .video-b {
+    grid-area: video-b;
+  }
+  .van {
+    grid-area: van;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    padding-bottom: 0;
+  }
+  
+  .header-img {
+    width: 250px;
   }
 }
 
 @media (min-width: 900px) { /* Tablet Landscape */
-  body {
-    background-color: green;
+  main {
+    grid-template-columns: minmax(auto, 450px) minmax(auto, 450px) minmax(auto, 450px);
+    grid-template-areas: 
+      "header header header"
+      "america europe asia" 
+      "video-a van  van" 
+      "video-b van  van";
+  }
+  
+  .van-title {
+    font-size: 2rem;
+  }
+  
+  .van-subtitle {
+    font-size: 1.5rem;
+    bottom: 100px;
   }
 }
 
 @media (min-width: 1200px) { /* Desktops */
-  body {
-    background-color: orange;
-  }
 }
