@@ -52,7 +52,7 @@ body {
 h1 {
   font-family: 'Fjalla+One', 'Libre Baskerville', serif;
   font-size: 2.4rem;
-  color: #B7B5BA;
+  color: #E6ECF2;
   align-self: end;
   padding-bottom: 1em;
 }
@@ -63,7 +63,6 @@ main {
   padding: 4rem 0;
   display: grid;
   grid-gap: 10px;
-  margin: 20px;
   grid-template-columns: minmax(auto, 450px);
   justify-content: center;
 }
@@ -129,7 +128,7 @@ section span {
   bottom: 66px;
   padding: 10px 15px 0;
   border-top: 4px solid #DCB239;
-  color: white;
+  color: #BFD8D2;
 }
 
 .sub-heading {
@@ -138,7 +137,7 @@ section span {
   bottom: 0px;
   font-size: 1.3rem;
   padding: 10px 15px;
-  color: white;
+  color: #BFD8D2;
 }
 
 .video div {
@@ -239,6 +238,8 @@ section span {
 footer,
 .footer-links-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 footer {
@@ -269,13 +270,9 @@ footer {
 }
 
 .copyRight-container {
-  margin-left: auto;
+  margin: 0 auto;
   padding-right: 1em;
   color: #E6ECF2;
-}
-
-@media (max-width: 599px) { /* Mobiles */
-
 }
 
 @media (min-width: 600px) { /* Tablet Portrait */
@@ -327,6 +324,10 @@ footer {
   
   #header-img {
     width: 350px;
+  }
+
+  .copyRight-container {
+    margin: 0 0 0 auto;
   }
 }
 
