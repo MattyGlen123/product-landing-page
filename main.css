@@ -1,7 +1,7 @@
 body {
   min-width: 380px;
   margin: 0;
-  background-color: #BFD8D2;
+  background-color: #272727;
   font-family: 'Fjalla+One', 'Esteban', serif;
 }
 
@@ -115,7 +115,7 @@ section iframe {
 }
 
 section img {
-  opacity: 0.3;
+  opacity: 0.7;
 }
   
 section img:hover {
@@ -227,6 +227,22 @@ section span {
   border-radius: 4px;
   background-color: #58BA4A;
   border: 4px solid white;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container a {
+  text-decoration: none;
+}
+
+.icon-container #portfolio-link {
+  color: white;
+  font-size: 1.5rem;
+  display: block;
 }
 
 .icon-container i {
