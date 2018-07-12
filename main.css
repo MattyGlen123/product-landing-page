@@ -7,8 +7,7 @@ body {
 
 #header {
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url(https://res.cloudinary.com/drldpyegp/image/upload/v1529350139/pexels-photo-105032.jpg) no-repeat center;
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1531392072/pexels-photo-105032.jpg) no-repeat center;
   background-size: cover;
   display: grid;
   grid-template-rows: 2fr 1fr 4fr;
@@ -32,8 +31,8 @@ body {
 #nav-bar .nav-link {
   text-decoration: none;
   color: #E6ECF2;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   padding: 0.5rem;
   border-radius: 30px;
@@ -42,6 +41,7 @@ body {
   width: 100px;
   text-align: center;
   transition: color .3s, border .3s;
+  background-color: rgba(0, 0, 0, 0.4);
 }
   
 #nav-bar .nav-link:hover {
@@ -123,9 +123,10 @@ section img:hover {
 }
 
 section span {
+  font-size: 1.3rem;
   position: absolute;
   left: 20px;
-  bottom: 66px;
+  bottom: 80px;
   padding: 10px 15px 0;
   border-top: 4px solid #DCB239;
   color: #BFD8D2;
@@ -135,7 +136,7 @@ section span {
   position: absolute;
   left: 20px;
   bottom: 0px;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding: 10px 15px;
   color: #BFD8D2;
 }
