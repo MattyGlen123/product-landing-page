@@ -95,7 +95,7 @@ main {
   font-family: 'Open Sans',sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
-  line-height: 25px;
+  line-height: 35px;
   max-width: 700px; 
   margin: 0 auto;
   margin-bottom: 40px;
@@ -177,18 +177,18 @@ section span {
   display: block;
   letter-spacing: 4px;
   font-size: 1.1rem;
-  color: rgb(128,173,206);
+  color: #F7B2BD;
 }
 
 #contact h2 {
   font-size: 50px;
   line-height: 50px;
-  color: rgb(37,90,146);
+  color: #BD3C5B;
 }
 
 #contact .heading-seperation {
   margin: 25px auto;
-  background-color: rgb(37,90,146);
+  background-color: #F7B2BD;
   height: 5px;
   width: 110px;
 }
@@ -198,9 +198,10 @@ section span {
   text-align: center;
   margin: 0 auto 20px;
   max-width: 340px;
-  color: rgb(128,173,206);
+  color: #BD3C5B;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 900;
+  line-height: 35px;
 }
 
 #form {
