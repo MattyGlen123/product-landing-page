@@ -239,7 +239,7 @@ body {
 /****************************************** Footer **************************************/
 
 footer,
-.footer-links-container {
+.footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -252,23 +252,23 @@ footer {
   align-items: center;
 }
 
-.footer-links-container {
+.footer {
   list-style-type: none; 
   padding-left: 10px;
 }
 
-.footer-link {
+.footer--item {
   display: block;
   text-align: center;
   padding: 0 10px;
 }
 
-.footer-link a {
+.footer--item__link {
   color: #E6ECF2;
   text-decoration: none;
 }
 
-.footer-link a:hover {
+.footer--item__link:hover {
   color: #B7B5BA;
 }
 
