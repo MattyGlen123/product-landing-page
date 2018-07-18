@@ -5,7 +5,7 @@ body {
   font-family: 'Fjalla+One', 'Esteban', serif;
 }
 
-#header {
+.header {
   height: 100vh;
   background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1531480302/pexels-photo-105032.jpg) no-repeat center;
   background-size: cover;
@@ -14,13 +14,7 @@ body {
   justify-items: center;
 }
 
-#header-img {
-  width: 250px;
-  align-self: center;
-  color: #FFFFFF;
-}
-
-#nav-bar {
+.nav-bar {
   width: 100%;
   max-width: 1200px;
   align-self: center;
@@ -28,7 +22,7 @@ body {
   justify-content: space-evenly;
 }
 
-#nav-bar .nav-link {
+.nav-bar__nav-link {
   text-decoration: none;
   color: #E6ECF2;
   font-size: 1.2rem;
@@ -44,12 +38,18 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
   
-#nav-bar .nav-link:hover {
+.nav-bar__nav-link:hover {
   color: #B7B5BA;
   border: #B7B5BA solid 3px;
 }
 
-h1 {
+.header__img {
+  width: 250px;
+  align-self: center;
+  color: #FFFFFF;
+}
+
+.header__title {
   font-family: 'Fjalla+One', 'Libre Baskerville', serif;
   font-size: 2.4rem;
   color: #E6ECF2;
@@ -59,7 +59,7 @@ h1 {
 
 /****************************************** Main section **************************************/
 
-main {
+.main-content {
   padding: 4rem 0;
   display: grid;
   grid-gap: 10px;
@@ -67,31 +67,31 @@ main {
   justify-content: center;
 }
 
-.main-content-header {
+.sub-header {
   text-align: center;
 }
 
-.main-content-header span {
+.sub-header__title--sub-title {
   display: block;
   letter-spacing: 4px;
   font-size: 1.1rem;
   color: #DCB239;
 }
 
-.main-content-header h2 {
+.sub-header__title {
   font-size: 50px;
   line-height: 50px;
   color: #DF744A;
 }
 
-.main-content-header .heading-seperation {
+.sub-header__title-seperator {
   margin: 25px auto;
   background: #DCB239;
   height: 5px;
   width: 110px;
 }
 
-.main-content-header p {
+.sub-header__text {
   font-family: 'Open Sans',sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
@@ -102,27 +102,26 @@ main {
   color: #DF744A;
 }
 
-main section {
+.card {
   position: relative;
   background-color: black;
 }
 
-section img,
-section iframe {
+.card__image {
   width: 100%;
   height: auto;
   transition: .3s ease;
 }
 
-section img {
+.card__image {
   opacity: 0.7;
 }
   
-section img:hover {
+.card__image:hover {
   opacity: 1;
 }
 
-section span {
+.card__subtitle {
   font-size: 1.3rem;
   position: absolute;
   left: 20px;
@@ -132,7 +131,7 @@ section span {
   color: #BFD8D2;
 }
 
-.sub-heading {
+.card__heading {
   position: absolute;
   left: 20px;
   bottom: 0px;
@@ -141,14 +140,14 @@ section span {
   color: #BFD8D2;
 }
 
-.video div {
+.card__video {
   position: relative;
   overflow: hidden;
   padding-top: 67.5%;
   height: auto;
 }
 
-.video div iframe {
+.card__video--link {
   position: absolute;
   top: 0;
   left: 0;
@@ -169,7 +168,7 @@ section span {
   background-size: cover;
 }
 
-.main-content-header {
+.sub-header {
   text-align: center;
 }
 
@@ -293,13 +292,25 @@ footer {
   color: #E6ECF2;
 }
 
+/****************************************** Media Querys **************************************/
+
 @media (min-width: 600px) { /* Tablet Portrait */
-  #nav-bar .nav-link {
+
+  .nav-bar__nav-link {
     font-size: 1.1rem;
     width: 120px;
   }
+
+  .header__title {
+    font-size: 3.5rem;
+    padding-bottom: 0;
+  }
   
-  main {
+  .header__img {
+    width: 350px;
+  }
+  
+  .main-content {
     grid-template-columns: minmax(auto, 450px) minmax(auto, 450px);
     grid-template-areas: 
       "header  header"
@@ -308,8 +319,8 @@ footer {
       "video-a video-b";
   }
   
-  .main-content-header {
-    grid-area: header
+  .sub-header {
+    grid-area: header;
   }
   
   .america {
@@ -334,15 +345,6 @@ footer {
   .van {
     grid-area: van;
   }
-  
-  h1 {
-    font-size: 3.5rem;
-    padding-bottom: 0;
-  }
-  
-  #header-img {
-    width: 350px;
-  }
 
   .copyRight-container {
     margin: 0 0 0 auto;
@@ -350,7 +352,7 @@ footer {
 }
 
 @media (min-width: 900px) { /* Tablet Landscape */
-  main {
+  .main-content {
     grid-template-columns: minmax(auto, 450px) minmax(auto, 450px) minmax(auto, 450px);
     grid-template-areas: 
       "header header header"
@@ -359,15 +361,12 @@ footer {
       "video-b van  van";
   }
   
-  .van-title {
+  .card__heading--lrg {
     font-size: 2rem;
   }
   
-  .van-subtitle {
+  .card__subtitle--lrg {
     font-size: 1.5rem;
     bottom: 100px;
   }
-}
-
-@media (min-width: 1200px) { /* Desktops */
 }

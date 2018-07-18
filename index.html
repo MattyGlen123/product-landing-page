@@ -10,50 +10,50 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 </head>
 <body>
-  <header id="header">
-    <nav id="nav-bar">
-      <a class="nav-link" href="#locations">Destinations</a>
-      <a class="nav-link" href="#video">Inspiration</a>
-      <a class="nav-link" href="#vehicles">Vehicles</a>
+  <header id="header" class="header">
+    <nav id="nav-bar" class="nav-bar">
+      <a class="nav-bar__nav-link" href="#locations">Destinations</a>
+      <a class="nav-bar__nav-link" href="#video">Inspiration</a>
+      <a class="nav-bar__nav-link" href="#vehicles">Vehicles</a>
     </nav>
-    <img id="header-img" src="images/volkswagen--eps--vector-logo.png" alt="volkswagon logo">
-    <h1>A <i>better</i><br>TRAVEL<br>EXPERIENCE</h1>
+    <img id="header-img" class="header__img" src="images/volkswagen--eps--vector-logo.png" alt="volkswagon logo">
+    <h1 class="header__title">A <i>better</i><br>TRAVEL<br>EXPERIENCE</h1>
   </header>
-  <main>
-    <div class="main-content-header">
-      <h2><span>GET INSPIRED</span>ADVENTURE</h2>
-      <div class="heading-seperation"></div>
-      <p>Everything you need is right here, choose one of our 3 destinations. The perfect way to travel is in the luxury of your own van with the music playing. “The use of traveling is to regulate imagination with reality, and instead of thinking of how things may be, see them as they are.” – Samuel Johnson</p>
+  <main class="main-content">
+    <div class="sub-header">
+      <h2 class="sub-header__title"><span class="sub-header__title--sub-title">GET INSPIRED</span>ADVENTURE</h2>
+      <div class="sub-header__title-seperator"></div>
+      <p class="sub-header__text">Everything you need is right here, choose one of our 3 destinations. The perfect way to travel is in the luxury of your own van with the music playing. “The use of traveling is to regulate imagination with reality, and instead of thinking of how things may be, see them as they are.” – Samuel Johnson</p>
     </div>
-    <section id="locations" class="america">
-      <img src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609077/pexels-photo-208745.jpg" alt ="a bridge">
-      <span>USA</span>
-      <h3 class="sub-heading">Follow Any Road</h3>
+    <section id="locations" class="card america">
+      <img class="card__image" src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609077/pexels-photo-208745.jpg" alt ="a bridge">
+      <span class="card__subtitle">USA</span>
+      <h3 class="card__heading">Follow Any Road</h3>
     </section>
-    <section class="europe">
-      <img src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609062/pexels-photo-672143.jpg" alt ="Eiffel tower">
-      <span>Europe</span>
-      <h3 class="sub-heading">Visit Every City</h3>
+    <section class="card europe">
+      <img class="card__image" src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609062/pexels-photo-672143.jpg" alt ="Eiffel tower">
+      <span class="card__subtitle">Europe</span>
+      <h3 class="card__heading">Visit Every City</h3>
     </section>
-    <section class="asia">
-      <img src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609071/pexels-photo-236148.jpg" alt ="man with umbrella">   
-      <span>Asia</span>
-      <h3 class="sub-heading">Find New Kingdoms</h3>
+    <section class="card asia">
+      <img class="card__image" src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609071/pexels-photo-236148.jpg" alt ="man with umbrella">   
+      <span class="card__subtitle">Asia</span>
+      <h3 class="card__heading">Find New Kingdoms</h3>
     </section>
-    <section class="video video-a">
-      <div>
-        <iframe id="video" src="https://www.youtube.com/embed/PqZtT_7NpRg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section class="card video-a">
+      <div class="card__video">
+        <iframe class="card__video--link" id="video" src="https://www.youtube.com/embed/PqZtT_7NpRg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </section>
-    <section class="video video-b">
-      <div>
-        <iframe src="https://www.youtube.com/embed/nIr7PqvbUUk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section class="card video-b">
+      <div class="card__video">
+        <iframe class="card__video--link" src="https://www.youtube.com/embed/nIr7PqvbUUk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </section>
-    <section id="vehicles" class="van">
-      <img src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609018/van-vw-travel-trip-594384.jpg" alt ="car">
-      <span class="van-subtitle">£14,500</span>
-      <h3 class="sub-heading van-title">Volkswagen</h3>
+    <section id="vehicles" class="card van">
+      <img class="card__image" src="https://res.cloudinary.com/drldpyegp/image/upload/v1529609018/van-vw-travel-trip-594384.jpg" alt ="car">
+      <span class="card__subtitle card__subtitle--lrg">£14,500</span>
+      <h3 class="card__heading card__heading--lrg">Volkswagen</h3>
     </section>
   </main>
   <div id="contact" class="skyline-background">
