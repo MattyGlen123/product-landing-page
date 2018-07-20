@@ -1,0 +1,276 @@
+body {
+  min-width: 380px;
+  margin: 0;
+  background-color: #272727;
+  font-family: 'Fjalla+One', 'Esteban', serif; }
+
+.header {
+  height: 100vh;
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1531480302/pexels-photo-105032.jpg) no-repeat center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 2fr 1fr 4fr;
+  justify-items: center; }
+
+.nav-bar {
+  width: 100%;
+  max-width: 1200px;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly; }
+
+.nav-bar__nav-link {
+  text-decoration: none;
+  color: #E6ECF2;
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: #E6ECF2 solid 3px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  transition: color .3s, border .3s;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.nav-bar__nav-link:hover {
+  color: #B7B5BA;
+  border: #B7B5BA solid 3px; }
+
+.header__img {
+  width: 250px;
+  align-self: center;
+  color: #FFFFFF; }
+
+.header__title {
+  font-family: 'Fjalla+One', 'Libre Baskerville', serif;
+  font-size: 2.4rem;
+  color: #E6ECF2;
+  align-self: end;
+  padding-bottom: 1em; }
+
+/****************************************** Main section **************************************/
+.main-content {
+  padding: 4rem 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: minmax(auto, 450px);
+  justify-content: center; }
+
+.sub-header {
+  text-align: center; }
+
+.sub-header__sub-title {
+  display: block;
+  letter-spacing: 4px;
+  font-size: 1.1rem; }
+
+.sub-header__sub-title--yellow {
+  color: #DCB239; }
+
+.sub-header__title {
+  font-size: 50px;
+  line-height: 50px; }
+
+.sub-header__title--orange,
+.sub-header__text--orange {
+  color: #DF744A; }
+
+.sub-header__title-seperator {
+  margin: 25px auto;
+  height: 5px;
+  width: 110px; }
+
+.sub-header__title-seperator--yellow {
+  background: #DCB239; }
+
+.sub-header__text {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 35px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+
+.card {
+  position: relative;
+  background-color: black; }
+
+.card__image {
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+  opacity: 0.7; }
+
+.card__image:hover {
+  opacity: 1; }
+
+.card__subtitle {
+  font-size: 1.3rem;
+  position: absolute;
+  left: 20px;
+  bottom: 80px;
+  padding: 10px 15px 0;
+  border-top: 4px solid #DCB239;
+  color: #BFD8D2; }
+
+.card__heading {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
+  font-size: 1.7rem;
+  padding: 10px 15px;
+  color: #BFD8D2; }
+
+.card__video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 67.5%;
+  height: auto; }
+
+.card__video--link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
+/****************************************** Contact section **************************************/
+.secondary-content {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+  width: 100%;
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1529767068/skyline-1566218_1920.png) no-repeat center, linear-gradient(#45464b, #45464b);
+  background-size: cover; }
+
+.sub-header__sub-title--light-pink {
+  color: #F7B2BD; }
+
+.sub-header__title--dark-pink,
+.sub-header__text--dark-pink {
+  color: #BD3C5B; }
+
+.sub-header__title-seperator--light-pink {
+  background-color: #F7B2BD; }
+
+#form {
+  padding-top: 20px; }
+
+#form #email {
+  padding-left: 15px;
+  width: 70%;
+  height: 60px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none; }
+
+#form #submit {
+  height: 62px;
+  margin-left: -10px;
+  padding: 0 10px;
+  width: 90px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #58BA4A;
+  border: 4px solid white; }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.icon-container a {
+  text-decoration: none; }
+
+.icon-container #portfolio-link {
+  color: white;
+  font-size: 1.5rem;
+  display: block; }
+
+.icon-container i {
+  padding: 70px 30px;
+  color: white;
+  font-size: 3rem; }
+
+/****************************************** Footer **************************************/
+footer,
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+footer {
+  color: white;
+  background: #494d59;
+  flex-direction: row;
+  align-items: center; }
+
+.footer {
+  list-style-type: none;
+  padding-left: 10px; }
+
+.footer--item {
+  display: block;
+  text-align: center;
+  padding: 0 10px; }
+
+.footer--item__link {
+  color: #E6ECF2;
+  text-decoration: none; }
+
+.footer--item__link:hover {
+  color: #B7B5BA; }
+
+.copyRight-container {
+  margin: 0 auto;
+  padding-right: 1em;
+  color: #E6ECF2; }
+
+/****************************************** Media Querys **************************************/
+@media (min-width: 600px) {
+  /* Tablet Portrait */
+  .nav-bar__nav-link {
+    font-size: 1.1rem;
+    width: 120px; }
+  .header__title {
+    font-size: 3.5rem;
+    padding-bottom: 0; }
+  .header__img {
+    width: 350px; }
+  .main-content {
+    grid-template-columns: minmax(auto, 450px) minmax(auto, 450px);
+    grid-template-areas: "header  header" "america europe"  "asia    van"  "video-a video-b"; }
+  .sub-header {
+    grid-area: header; }
+  .card--america {
+    grid-area: america; }
+  .card--europe {
+    grid-area: europe; }
+  .card--asia {
+    grid-area: asia; }
+  .card--video-a {
+    grid-area: video-a; }
+  .card--video-b {
+    grid-area: video-b; }
+  .card--van {
+    grid-area: van; }
+  .copyRight-container {
+    margin: 0 0 0 auto; } }
+
+@media (min-width: 900px) {
+  /* Tablet Landscape */
+  .main-content {
+    grid-template-columns: minmax(auto, 450px) minmax(auto, 450px) minmax(auto, 450px);
+    grid-template-areas: "header header header" "america europe asia"  "video-a van  van"  "video-b van  van"; }
+  .card__heading--lrg {
+    font-size: 2rem; }
+  .card__subtitle--lrg {
+    font-size: 1.5rem;
+    bottom: 100px; } }
