@@ -1,0 +1,23 @@
+body {
+  min-width: 380px;
+  margin: 0;
+  background-color: #272727;
+}
+
+.main-content {
+  padding: 4rem 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: minmax(auto, 450px);
+  justify-content: center;
+}
+
+.secondary-content {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+  width: 100%;
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1529767068/skyline-1566218_1920.png) no-repeat center,
+    linear-gradient( rgba(69,70,75, 1), rgba(69,70,75, 1));
+  background-size: cover;
+}

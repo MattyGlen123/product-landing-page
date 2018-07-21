@@ -1,0 +1,28 @@
+.nav-bar {
+  width: 100%;
+  max-width: 1200px;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar__nav-link {
+  text-decoration: none;
+  color: #E6ECF2;
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: #E6ECF2 solid 3px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  transition: color .3s, border .3s;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+  
+.nav-bar__nav-link:hover {
+  color: #B7B5BA;
+  border: #B7B5BA solid 3px;
+}

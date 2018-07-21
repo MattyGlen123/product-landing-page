@@ -1,0 +1,22 @@
+.header {
+  height: 100vh;
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1531480302/pexels-photo-105032.jpg) no-repeat center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 2fr 1fr 4fr;
+  justify-items: center;
+
+  &__img {
+    width: 250px;
+    align-self: center;
+    color: #FFFFFF;
+  }
+
+  &__title {
+    font-family: 'Fjalla+One', 'Libre Baskerville', serif;
+    font-size: 2.4rem;
+    color: #E6ECF2;
+    align-self: end;
+    padding-bottom: 1em;
+  }
+}
