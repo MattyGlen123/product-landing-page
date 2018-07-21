@@ -1,0 +1,40 @@
+footer,
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer {
+  color: white;
+  background: #494d59;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer {
+  list-style-type: none; 
+  padding-left: 10px;
+
+  &--item {
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+
+
+    &__link:link {
+      color: #E6ECF2;
+      text-decoration: none;
+    }
+
+    &__link:hover {
+      color: #B7B5BA;
+    }
+  }
+}
+
+.copyRight-container {
+  margin: 0 auto;
+  padding-right: 1em;
+  color: #E6ECF2;
+}
