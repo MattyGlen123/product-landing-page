@@ -20,6 +20,8 @@
   text-align: center;
   transition: color .3s, border .3s;
   background-color: rgba(0, 0, 0, 0.4);
+  animation: moveInBtn 1s ease-in;
+  animation-fill-mode: both;
 }
   
 .nav-bar__nav-link:hover {

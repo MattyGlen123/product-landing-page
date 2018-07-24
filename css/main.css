@@ -1,3 +1,21 @@
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 body {
   min-width: 380px;
   margin: 0;
@@ -97,7 +115,16 @@ body {
     font-size: 2.4rem;
     color: #E6ECF2;
     align-self: end;
-    padding-bottom: 1em; }
+    margin: 0; }
+    .header__title--1 {
+      animation: moveInRight 1s ease-in;
+      animation-fill-mode: both; }
+    .header__title--2 {
+      animation: moveInRight 1s ease-in .5s;
+      animation-fill-mode: both; }
+    .header__title--3 {
+      animation: moveInRight 1s ease-in 1s;
+      animation-fill-mode: both; }
 
 .nav-bar {
   width: 100%;
@@ -119,7 +146,9 @@ body {
   width: 100px;
   text-align: center;
   transition: color .3s, border .3s;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: moveInBtn 1s ease-in;
+  animation-fill-mode: both; }
 
 .nav-bar__nav-link:hover {
   color: #B7B5BA;
