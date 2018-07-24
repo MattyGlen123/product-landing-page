@@ -17,6 +17,22 @@
     font-size: 2.4rem;
     color: #E6ECF2;
     align-self: end;
-    padding-bottom: 1em;
+    margin: 0;
+  
+    &--1 {
+      animation: moveInRight 1s ease-in;
+      animation-fill-mode: both;
+    }
+
+    &--2 {
+      animation: moveInRight 1s ease-in .5s;
+      animation-fill-mode: both;
+    }
+
+    &--3 {
+      animation: moveInRight 1s ease-in 1s;
+      animation-fill-mode: both;
+
+    }
   }
 }
